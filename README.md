@@ -45,7 +45,7 @@ alias dotgit='git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 First, create a function.
 
 ```powershell
-function dtf { git --git-dir=$HOME/dotfiles/ --work-tree=$HOME @args }
+function dotgitsetup { git --git-dir=$HOME/dotfiles/ --work-tree=$HOME @args }
 ```
 
 Then assign that function to an alias.
@@ -53,7 +53,7 @@ Then assign that function to an alias.
 **Note**: See **Set Up Permanent Aliases** to set this command permanently.
 
 ```powershell
-Set-Alias -Name dotgit -Value dtf
+Set-Alias -Name dotgit -Value dotgitsetup
 ```
 
 ### Step 3
@@ -186,13 +186,13 @@ Inside `profile.ps1`, save your aliases.
 
 First, create a function
 ```powershell
-function dtf { git --git-dir=$HOME/dotfiles/ --work-tree=$HOME @args }
+function dotgitsetup { git --git-dir=$HOME/dotfiles/ --work-tree=$HOME @args }
 ```
 
 Then assign that function to an alias.
 
 ```powershell
-Set-Alias -Name dotgit -Value dtf
+Set-Alias -Name dotgit -Value dotgitsetup
 ```
 
 Save `profile.ps1`, and restart your PowerShell terminal.
