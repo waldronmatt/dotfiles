@@ -1,12 +1,14 @@
-# Stores VSCode versions used for testing VSCode extensions
-.vscode-test
+# https://github.com/toptal/gitignore/blob/master/templates/VisualStudioCode.gitignore
 
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-*.code-workspace
+!.vscode/*.code-snippets
 
-# folder color on linux
-.directory
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
