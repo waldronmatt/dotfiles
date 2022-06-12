@@ -1,13 +1,25 @@
-# My Project
+# My Awesome Project
 
-Brief project description.
+`README.md` template for projects.
+
+## Features
+
+- Number one
+- Number two
+- Number three
 
 ## Installation
 
 Install dependencies:
 
 ```bash
-npm i
+yarn
+```
+
+Install hooks:
+
+```bash
+yarn prepare
 ```
 
 ## Getting Started
@@ -15,14 +27,52 @@ npm i
 Run dev environment:
 
 ```bash
-npm run dev
+yarn dev
 ```
 
-Build and serve:
+Build and serve for Netlify:
 
 ```bash
-npm run build
+yarn build
 ```
+
+**Note:** Configure script in Netlify to auto-run via push to `main` branch.
+
+Build for Express:
+
+```bash
+yarn prod
+```
+
+Serve for Express:
+
+```bash
+yarn serve
+```
+
+## Commands
+
+Commit changes using conventional changelog:
+
+```bash
+yarn commit
+```
+
+Lint files:
+
+```bash
+yarn lint
+```
+
+**Note**: `release.yml` will run this before versioning and publishing.
+
+Run tests:
+
+```bash
+yarn test
+```
+
+**Note**: `release.yml` will run this before versioning and publishing.
 
 ## License
 
