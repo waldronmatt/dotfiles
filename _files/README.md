@@ -74,6 +74,12 @@ yarn lint
 
 **Note**: `release.yml` will run this before versioning and publishing.
 
+Lint `.yml` files:
+
+```bash
+make -f MAKEFILE
+```
+
 Run tests:
 
 ```bash
@@ -81,12 +87,6 @@ yarn test
 ```
 
 **Note**: `release.yml` will run this before versioning and publishing.
-
-Lint `.yml` files:
-
-```bash
-make -f MAKEFILE
-```
 
 ## License
 
