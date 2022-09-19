@@ -22,6 +22,14 @@ Install hooks:
 yarn prepare
 ```
 
+Install `make`:
+
+```bash
+[your-package-manager] install make
+```
+
+Install `yamllint` and `actionlint`.
+
 ## Getting Started
 
 Run dev environment:
@@ -73,6 +81,12 @@ yarn test
 ```
 
 **Note**: `release.yml` will run this before versioning and publishing.
+
+Lint `.yml` files:
+
+```bash
+make -f MAKEFILE
+```
 
 ## License
 
