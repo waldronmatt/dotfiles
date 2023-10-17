@@ -13,49 +13,39 @@
 Install dependencies:
 
 ```bash
-yarn
+pnpm i
 ```
 
 Install hooks:
 
 ```bash
-yarn prepare
+pnpm prepare
 ```
-
-Install `make`:
-
-```bash
-[your-package-manager] install make
-```
-
-Install `yamllint` and `actionlint`.
 
 ## Getting Started
 
-Run dev environment:
+Run local development server:
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
-Build and serve for Netlify:
+Lint files:
 
 ```bash
-yarn build
+pnpm lint
 ```
 
-**Note:** Configure script in Netlify to auto-run via push to `main` branch.
-
-Build for Express:
+Run tests:
 
 ```bash
-yarn prod
+pnpm test
 ```
 
-Serve for Express:
+Compile files and build bundle:
 
 ```bash
-yarn serve
+pnpm build
 ```
 
 ## Commands
@@ -63,30 +53,8 @@ yarn serve
 Commit changes using conventional changelog:
 
 ```bash
-yarn commit
+pnpm commit
 ```
-
-Lint files:
-
-```bash
-yarn lint
-```
-
-**Note**: `release.yml` will run this before versioning and publishing.
-
-Lint `.yml` files:
-
-```bash
-make -f MAKEFILE
-```
-
-Run tests:
-
-```bash
-yarn test
-```
-
-**Note**: `release.yml` will run this before versioning and publishing.
 
 ## License
 
