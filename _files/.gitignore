@@ -144,3 +144,9 @@ build/
 
 # Jest folder of detailed test coverage
 coverage/
+
+# nx
+nx-cloud.env
+
+# Storybook
+storybook-static
